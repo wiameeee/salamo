@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <title>🌒⚡️</title>
+    <style>
+     .totale{
+     
+      display: grid;
+      grid-template-columns: 200px 200px 200px ;
+      column-gap: 20px;
+      row-gap: 40px;
+     }
+     .image{
+      width:200px;
+      height: 200px;
+      object-fit: cover;
+     }
+     .profile{
+       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  
+}
+     .mini{
+     width: 28px;
+     height: 28px;
+     border-radius: 30px;
+     object-fit: cover;
+    margin-left: 10px;
+    
+  
+}
+    .name{
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 23px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+      
+    .hhhh{
+     
+      color: rgb(92, 92, 92); 
+      margin-left:10px;
+      font-family: Arial;
+      
+      
+    
+    }
+    .section{
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    margin-bottom: 0px;
+    align-items: center;
+
+    }
+    .add{
+      background-color: rgb(24, 119, 242);
+      color: white;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 0;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .add:hover{
+      opacity: 0.9;
+    }
+    .header{
+      height: 60px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: fixed;
+      background-color: white;
+     top: 0;
+     left: 0;
+     right: 0;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: rgb(228, 228, 228);
+   
+
+    }
+    .left-section{
+      width: 200px;
+     
+      margin-right: 20px;
+      display: flex;
+     
+      align-items: center;
+    
+    }
+    .middle-section{
+      flex: 1;
+      
+      margin-right: 30px;
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+
+    }
+    .search-bar{
+      width: 200px;
+      height: 19px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-color: lightgray;
+      border-style: solid;
+      border-radius: 2px; 
+      font-weight: bolder;
+      padding-left: 10px;
+      flex: 1;
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+      border-width: 1px;
+      background-color: lightgoldenrodyellow;
+     
+    }
+       
+    .right-section{
+      width: 200px;
+      height: 60px;
+      
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    
+    }
+    .num{
+     position: absolute;
+     top: -5px;
+     right:-2px ;
+     background-color: rgb(239, 88, 88);
+     border-radius: 15px;
+     color: white;
+     font-family: roboto , arial;
+     font-size: 11px;
+     padding-left: 4px;
+     padding-right: 4px;
+     
+
+    }
+    .icon{
+      width: 50px;
+      margin-left: 40px;
+      position: relative;
+      
+    
+      
+    }
+    .bird{
+      width: 47px;
+      cursor: pointer;
+    }
+    .chill{
+      cursor: pointer;
+
+    }
+    .symbol{
+      margin-left: 30px;
+    }
+    .img1 { 
+    width: 45px;
+    cursor: pointer;
+  
+  }
+    .img2{
+      width: 45px;
+      margin-right: 29px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .frfr{
+
+      width: 29px;
+      height: 33px;
+      background-color: lightgoldenrodyellow;
+      margin-left: -1.2px;
+      border-color: lightgray;
+      border-style: solid;
+      border-radius: px;
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+      border-radius: 2px;
+      border-width: 1px; 
+      position: relative;
+      
+    }
+    .img3{
+      width: 23px;
+      margin-left: -4px;
+      
+      
+    
+    }
+    .search-bar::placeholder{
+      font-family: roboto;
+      font-size: 16px;
+      color: rgb(56, 157, 208);
+
+    }
+    .sidebar{
+     left: 0;
+      width: 55px;
+      height: 800px;
+     background-color: white;
+      margin-top: 61px;
+      position: fixed;
+      border-right-width: 1px;
+      border-right-color: rgb(228, 228, 228);
+      border-right-style: solid;
+      cursor: pointer;
+     
+    }
+      .fruit{
+        
+        margin-bottom: 1px;
+        height: 75px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 200;
+
+      }
+      .fruit:hover{
+        background-color: rgb(235, 235, 235);
+
+      }
+      .fruit img {
+        width: 45px;
+        margin-bottom: 5px;
+      }
+      .fruit div {
+        font-family: arial;
+        font-size: 12px;
+      }
+      .frfr .search{
+        position: absolute;
+        background-color: rgb(157, 155, 155);
+        color: white;
+        padding-top: 4px;
+        padding-left: 4px;
+        padding-bottom: 4px;
+        padding-right: 4px;
+        font-family: arial;
+        border-radius: 2px;
+        bottom: -15px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+
+      }
+      .frfr:hover .search {
+        opacity: 1;
+
+      }
+      @media (max-width:700px){
+        .totale{
+          grid-template-columns: 200px 200px;}
+        }
+      
+      @media (min-width:700px){
+        .totale{
+          grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        }
+      } 
+      </style>
+      </head>
+      <body style="height: 3000px;
+           padding-top: 80px;
+           padding-left: 80px;
+           background-color: rgb(251, 247, 247);
+           ">
+
+    
+
+ 
+
+      <div class="header">
+        <div class="left-section">
+          <img class="img2" src="photosn/h.png">
+       
+        <img class="img1" src="photosn/icons8-messages-64.png">
+        <p> message</p>
+      </div>
+        <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="write your feelings..">
+            <button class="frfr">
+          <img class="img3" src="photosn/icons8-hand-48.png">
+          <div class="search"> hope</div>
+            </button> 
+        </div>
+              
+        <div class="right-section">
+          <img class="chill" src="photosn/icons8-chill-64.png">
+          <div class="icon">
+          <img class="bird" src="photosn/icons8-bird-50.png">
+          
+          </div>
+        </div> 
+        <div class="sidebar">
+          <div class="fruit"> 
+            <img src="photosn/icons8-fruit-48.png">
+            <div> fruit</div>
+          </div>
+          <div class="fruit">
+            <img src="photosn/icons8-butterfly-48.png">
+            <div> butterfly</div>
+          </div>
+          <div class="fruit">
+          <img src="photosn/icons8-sun-50.png">
+          <div>sun</div>
+          </div>
+          <div class="fruit">
+            <img src="photosn/icons8-trees-100.png">
+            <div> trees</div>
+          </div>
+          <div class="fruit">
+            <img src="photosn/icons8-kick-scooter-48.png">
+            <div> scooter</div>
+          </div>
+
+         
+        </div>
+      
+
+      </div>
+        <div class="totale">
+          <div class="profile">
+         <img class="image" src="photosn/cat2.jpg">
+         <p class="name">
+          Oliver
+        </p>
+          
+          <div class="section">
+              <img class="mini" src="photosn/cat2.jpg"> 
+            <p class="hhhh">
+              2 mutual friends
+            </p>
+            
+          </div>
+          <button class="add">
+            Add friend
+          </button>
+        </div>
+        <div class="profile">
+          <img class="image" src="photosn/download.jpeg">
+          <p class="name">
+           Wiam
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/view.jpeg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/time.jpg">
+          <p class="name">
+           doae
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/pexels-camille-robinson-7356405.jpg">
+          <p class="name">
+           Sbtaoui
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/pexels-eberhard-grossgasteiger-1624496.jpg">
+          <p class="name">
+           chorok
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/pexels-leeloo-thefirst-6794043.jpg">
+          <p class="name">
+           maryam
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/pexels-pixabay-414648.jpg">
+          <p class="name">
+           chaimae
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+         <div class="profile">
+          <img class="image" src="photosn/pexels-taryn-elliott-6405694.jpg">
+          <p class="name">
+           Nadia
+         </p>
+           
+           <div class="section">
+               <img class="mini" src="photosn/home.jpg"> 
+             <p class="hhhh">
+               2 mutual friends
+             </p>
+             
+           </div>
+           <button class="add">
+             Add friend
+           </button>
+         </div>
+        </div> 
+
+
+     </body>
+</HTML>
